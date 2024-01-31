@@ -1,11 +1,19 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document management system</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">^
+  <link rel="stylesheet" href="{% static 'pdf_viewer/css/styles.css' %}">
+  <title>PDF Drag and Drop</title>
 </head>
 <body>
-    <h1> Hello , test </h1>
+  <div id="drop-zone">
+    <p>Drag & Drop PDF files here</p>
+  </div>
+  <div id="pdf-container"></div>
+
+  <script src="{% static 'pdf_viewer/js/script.js' %}"></script>
 </body>
 </html>
